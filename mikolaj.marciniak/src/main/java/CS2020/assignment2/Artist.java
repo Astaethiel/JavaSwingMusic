@@ -9,9 +9,9 @@ public class Artist {
     String dob;
     String placeOfBirth;
     ArrayList<String> songs = new ArrayList<>();
-    
-    Artist(){
 
+    Artist(){
+       artistID = UUID.randomUUID();
     }
     
 }
