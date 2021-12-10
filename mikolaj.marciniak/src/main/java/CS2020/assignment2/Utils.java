@@ -1,19 +1,23 @@
 package CS2020.assignment2;
 
 import java.util.*;
+
+import javax.swing.*;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Utils {
-    public static HashMap returnSongDurationAndTitleFormatted(ArrayList<Song> songList) {
+    public static HashMap<UUID, String> returnSongDurationAndTitleFormatted(ArrayList<Song> songList) {
         HashMap<UUID, String> map=new HashMap<UUID,String>();
-        for (Song song : songList) {
+        songList.forEach((song) -> { 
             Integer minutes = song.getDuration()/60;
             Integer seconds = song.getDuration()%60;
             String time = minutes.toString() + ":" + seconds.toString();
             String titleString = song.getTitle() + " " + "(" + time + ")";
             map.put(song.getSongID(), titleString);
-        }    
+        });
+        
         return map;
     }
 
@@ -27,8 +31,11 @@ public class Utils {
         return false;
     }
     
-    public static void createExampleArtists(){
+    public static void createExampleArtists(JList<Artist> list){
+        //3.2 Amend your createExampleArtists() method so it takes an input parameter of JList list. JList is
+        //a raw type so you should also set the appropriate type attribute using the <>. 
         Artist eltonJohn = new Artist();
+        //JList.add(eltonJohn);
         eltonJohn.setFirstName("Elton");
         eltonJohn.setLastName("John*");
         eltonJohn.setDOB("25 Mar 1947");
