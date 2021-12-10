@@ -69,7 +69,7 @@ public class Utils {
 
     }
 
-    public void readArtistAndSongsFromDatabase(Jlist list) {
+    public void readArtistAndSongsFromDatabase(JList list) {
 
     }
 }
