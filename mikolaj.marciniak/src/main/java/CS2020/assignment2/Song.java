@@ -33,7 +33,7 @@ public class Song {
     public void setTitle(String newTitle){
         title = newTitle;
     }
-    public void getDuration(Integer newDuration){
+    public void setDuration(Integer newDuration){
         duration = newDuration;
     }
 }

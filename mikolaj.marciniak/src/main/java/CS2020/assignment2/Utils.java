@@ -25,5 +25,36 @@ public class Utils {
             return true;
         }
         return false;
-    } 
+    }
+    
+    public static void createExampleArtists(){
+        Artist eltonJohn = new Artist();
+        eltonJohn.setFirstName("Elton");
+        eltonJohn.setLastName("John*");
+        eltonJohn.setDOB("25 Mar 1947");
+        eltonJohn.setPlaceOfBirth("United Kingdom");
+        Song rocketMan = new Song();
+        rocketMan.setArtistID(eltonJohn.getArtistID());
+        rocketMan.setTitle("Rocket Man");
+        rocketMan.setDuration(281);
+        Song honkyCat = new Song();
+        honkyCat.setArtistID(eltonJohn.getArtistID());
+        honkyCat.setTitle("Honky Cat");
+        honkyCat.setDuration(313);
+
+        Artist kendrickLamar = new Artist();
+        kendrickLamar.setFirstName("Kendrick");
+        kendrickLamar.setLastName("Lamar*");
+        kendrickLamar.setDOB("17 Jun 1987");
+        kendrickLamar.setPlaceOfBirth("California");
+        Song theRecipe = new Song();
+        theRecipe.setArtistID(kendrickLamar.getArtistID());
+        theRecipe.setTitle("The Recipe");
+        theRecipe.setDuration(353);
+        Song blackFriday = new Song();
+        blackFriday.setArtistID(kendrickLamar.getArtistID());
+        blackFriday.setTitle("Black Friday");
+        blackFriday.setDuration(428);
+
+    }
 }
