@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        //Utils u = new Utils();
+        //System.out.print(u.checkIfBornOnWeekend("3 Dec 1999"));
     }
 }
