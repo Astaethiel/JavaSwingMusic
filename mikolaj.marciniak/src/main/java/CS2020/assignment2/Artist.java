@@ -14,6 +14,10 @@ public class Artist {
        artistID = UUID.randomUUID();
        }
 
+    public void addSong(Song newSong){
+        songs.add(newSong);
+    }
+
     public UUID getArtistID(){
         return artistID; 
     }
