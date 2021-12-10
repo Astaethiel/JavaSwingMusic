@@ -64,4 +64,12 @@ public class Utils {
         blackFriday.setDuration(428);
 
     }
+
+    public void connectToDatabase (){
+
+    }
+
+    public void readArtistAndSongsFromDatabase(Jlist list) {
+
+    }
 }
